@@ -15,11 +15,17 @@
             .linear2 {
                 background-image: linear-gradient(to right, rgb(14 165 233), rgb(99 102 241));
             }
+            .linear3 {
+                background-image: linear-gradient(to right, rgba(14, 165, 233, 0.7), rgba(99, 102, 241, 0.7));
+            }
             .linear2-hover:hover {
                 background-image: linear-gradient(to right, rgb(14 165 233), rgb(99 102 241));
             }
             .conic2 {
                 background-image: conic-gradient(rgb(14 165 233), rgb(99 102 241), rgb(14 165 233));
+            }
+            .conic3 {
+                background-image: conic-gradient(rgb(99 102 241), rgb(14 165 233), rgb(99 102 241));
             }
             .food {
                 background-color: white;
@@ -57,9 +63,9 @@
                             </div>
                         </div>
                         <div class="flex gap-x-[20px] items-center">
-                            <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                            <button onclick="add_item('麻婆豆腐飯', 38)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                             <h4 class="count">0</h4>
-                            <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                            <button onclick="remove_item('麻婆豆腐飯', 38)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                         </div>
                     </div>
                     <div class="food flex gap-x-[20px] justify-between">
@@ -71,9 +77,9 @@
                             </div>
                         </div>
                         <div class="flex gap-x-[20px] items-center">
-                            <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                            <button onclick="add_item('豬扒炒公仔麵', 30)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                             <h4 class="count">0</h4>
-                            <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                            <button onclick="remove_item('豬扒炒公仔麵', 30)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                         </div>
                     </div>
                     <div class="food flex gap-x-[20px] justify-between">
@@ -85,9 +91,9 @@
                             </div>
                         </div>
                         <div class="flex gap-x-[20px] items-center">
-                            <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                            <button onclick="add_item('滑蛋蝦仁飯', 38)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                             <h4 class="count">0</h4>
-                            <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                            <button onclick="remove_item('滑蛋蝦仁飯', 38)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                         </div>
                     </div>
                     <div class="food flex gap-x-[20px] justify-between">
@@ -99,9 +105,9 @@
                             </div>
                         </div>
                         <div class="flex gap-x-[20px] items-center">
-                            <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                            <button onclick="add_item('楊州炒飯', 38)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                             <h4 class="count">0</h4>
-                            <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                            <button onclick="remove_item('楊州炒飯', 38)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                         </div>
                     </div>
                     <div class="food flex gap-x-[20px] justify-between">
@@ -113,9 +119,9 @@
                             </div>
                         </div>
                         <div class="flex gap-x-[20px] items-center">
-                            <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                            <button onclick="add_item('雪菜肉絲湯米', 28)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                             <h4 class="count">0</h4>
-                            <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                            <button onclick="remove_item('雪菜肉絲湯米', 28)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                         </div>
                     </div>
                     <div class="food flex gap-x-[20px] justify-between">
@@ -127,9 +133,9 @@
                             </div>
                         </div>
                         <div class="flex gap-x-[20px] items-center">
-                            <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                            <button onclick="add_item('豉椒鮮魷飯', 38)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                             <h4 class="count">0</h4>
-                            <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                            <button onclick="remove_item('豉椒鮮魷飯', 38)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                         </div>
                     </div>
                     <div class="food flex gap-x-[20px] justify-between">
@@ -141,9 +147,9 @@
                             </div>
                         </div>
                         <div class="flex gap-x-[20px] items-center">
-                            <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                            <button onclick="add_item('涼瓜排骨飯', 45)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                             <h4 class="count">0</h4>
-                            <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                            <button onclick="remove_item('涼瓜排骨飯', 45)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                         </div>
                     </div>
                     <div class="food flex gap-x-[20px] justify-between">
@@ -155,9 +161,9 @@
                             </div>
                         </div>
                         <div class="flex gap-x-[20px] items-center">
-                            <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                            <button onclick="add_item('乾炒牛河', 38)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                             <h4 class="count">0</h4>
-                            <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                            <button onclick="remove_item('乾炒牛河', 38)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                         </div>
                     </div>
                     <div class="food flex gap-x-[20px] justify-between">
@@ -169,9 +175,9 @@
                             </div>
                         </div>
                         <div class="flex gap-x-[20px] items-center">
-                            <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                            <button onclick="add_item('時菜牛肉飯', 38)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                             <h4 class="count">0</h4>
-                            <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                            <button onclick="remove_item('時菜牛肉飯', 38)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                         </div>
                     </div>
                     <div class="food flex gap-x-[20px] justify-between">
@@ -183,9 +189,9 @@
                             </div>
                         </div>
                         <div class="flex gap-x-[20px] items-center">
-                            <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                            <button onclick="add_item('星州炒米', 38)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                             <h4 class="count">0</h4>
-                            <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                            <button onclick="remove_item('星州炒米', 38)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                         </div>
                     </div>
                     <div class="food flex gap-x-[20px] justify-between">
@@ -197,9 +203,9 @@
                             </div>
                         </div>
                         <div class="flex gap-x-[20px] items-center">
-                            <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                            <button onclick="add_item('咸魚雞粒炒飯', 38)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                             <h4 class="count">0</h4>
-                            <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                            <button onclick="remove_item('咸魚雞粒炒飯', 38)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                         </div>
                     </div>
                     <div class="food flex gap-x-[20px] justify-between">
@@ -211,9 +217,9 @@
                             </div>
                         </div>
                         <div class="flex gap-x-[20px] items-center">
-                            <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                            <button onclick="add_item('咖哩牛腩飯', 38)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                             <h4 class="count">0</h4>
-                            <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                            <button onclick="remove_item('咖哩牛腩飯', 38)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                         </div>
                     </div>
                     <div class="food flex gap-x-[20px] justify-between">
@@ -225,9 +231,9 @@
                             </div>
                         </div>
                         <div class="flex gap-x-[20px] items-center">
-                            <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                            <button onclick="add_item('豆腐火腩飯', 38)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                             <h4 class="count">0</h4>
-                            <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                            <button onclick="remove_item('豆腐火腩飯', 38)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                         </div>
                     </div>
                     <div class="food flex gap-x-[20px] justify-between">
@@ -239,9 +245,9 @@
                             </div>
                         </div>
                         <div class="flex gap-x-[20px] items-center">
-                            <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                            <button onclick="add_item('沙爹牛肉通粉', 28)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                             <h4 class="count">0</h4>
-                            <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                            <button onclick="remove_item('沙爹牛肉通粉', 28)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                         </div>
                     </div>
                     <div class="food flex gap-x-[20px] justify-between">
@@ -253,9 +259,9 @@
                             </div>
                         </div>
                         <div class="flex gap-x-[20px] items-center">
-                            <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                            <button onclick="add_item('肉絲炒麵', 36)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                             <h4 class="count">0</h4>
-                            <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                            <button onclick="remove_item('肉絲炒麵', 36)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                         </div>
                     </div>
                     <div class="food flex gap-x-[20px] justify-between">
@@ -267,9 +273,9 @@
                             </div>
                         </div>
                         <div class="flex gap-x-[20px] items-center">
-                            <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                            <button onclick="add_item('干炒叉燒意', 42)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                             <h4 class="count">0</h4>
-                            <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                            <button onclick="remove_item('干炒叉燒意', 42)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                         </div>
                     </div>
                     <div class="flex flex-col w-full gap-y-[20px]">
@@ -283,9 +289,9 @@
                                 </div>
                             </div>
                             <div class="flex gap-x-[20px] items-center">
-                                <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                                <button onclick="add_item('五香肉丁公仔麵', 25)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                                 <h4 class="count">0</h4>
-                                <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                                <button onclick="remove_item('五香肉丁公仔麵', 25)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                             </div>
                         </div>
                         <div class="food flex gap-x-[20px] justify-between">
@@ -297,9 +303,9 @@
                                 </div>
                             </div>
                             <div class="flex gap-x-[20px] items-center">
-                                <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                                <button onclick="add_item('公司三文治', 24)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                                 <h4 class="count">0</h4>
-                                <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                                <button onclick="remove_item('公司三文治', 24)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                             </div>
                         </div>
                         <div class="food flex gap-x-[20px] justify-between">
@@ -311,9 +317,9 @@
                                 </div>
                             </div>
                             <div class="flex gap-x-[20px] items-center">
-                                <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                                <button onclick="add_item('占醬多士', 20)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                                 <h4 class="count">0</h4>
-                                <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                                <button onclick="remove_item('占醬多士', 20)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                             </div>
                         </div>
                         <div class="food flex gap-x-[20px] justify-between">
@@ -325,9 +331,9 @@
                                 </div>
                             </div>
                             <div class="flex gap-x-[20px] items-center">
-                                <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                                <button onclick="add_item('吉列班塊', 20)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                                 <h4 class="count">0</h4>
-                                <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                                <button onclick="remove_item('吉列班塊', 20)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                             </div>
                         </div>
                         <div class="food flex gap-x-[20px] justify-between">
@@ -339,9 +345,9 @@
                                 </div>
                             </div>
                             <div class="flex gap-x-[20px] items-center">
-                                <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                                <button onclick="add_item('吉列豬扒', 20)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                                 <h4 class="count">0</h4>
-                                <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                                <button onclick="remove_item('吉列豬扒', 20)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                             </div>
                         </div>
                         <div class="food flex gap-x-[20px] justify-between">
@@ -353,9 +359,9 @@
                                 </div>
                             </div>
                             <div class="flex gap-x-[20px] items-center">
-                                <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                                <button onclick="add_item('咸牛肉三文治', 24)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                                 <h4 class="count">0</h4>
-                                <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                                <button onclick="remove_item('咸牛肉三文治', 24)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                             </div>
                         </div>
                         <div class="food flex gap-x-[20px] justify-between">
@@ -367,9 +373,9 @@
                                 </div>
                             </div>
                             <div class="flex gap-x-[20px] items-center">
-                                <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                                <button onclick="add_item('奶油多士', 20)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                                 <h4 class="count">0</h4>
-                                <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                                <button onclick="remove_item('奶油多士', 20)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                             </div>
                         </div>
                         <div class="food flex gap-x-[20px] justify-between">
@@ -381,9 +387,9 @@
                                 </div>
                             </div>
                             <div class="flex gap-x-[20px] items-center">
-                                <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                                <button onclick="add_item('火腿奄列', 25)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                                 <h4 class="count">0</h4>
-                                <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                                <button onclick="remove_item('火腿奄列', 25)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                             </div>
                         </div>
                         <div class="food flex gap-x-[20px] justify-between">
@@ -395,9 +401,9 @@
                                 </div>
                             </div>
                             <div class="flex gap-x-[20px] items-center">
-                                <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                                <button onclick="add_item('火腿湯通粉', 25)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                                 <h4 class="count">0</h4>
-                                <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                                <button onclick="remove_item('火腿湯通粉', 25)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                             </div>
                         </div>
                         <div class="food flex gap-x-[20px] justify-between">
@@ -409,9 +415,9 @@
                                 </div>
                             </div>
                             <div class="flex gap-x-[20px] items-center">
-                                <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                                <button onclick="add_item('炸薯條', 20)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                                 <h4 class="count">0</h4>
-                                <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                                <button onclick="remove_item('炸薯條', 20)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                             </div>
                         </div>
                         <div class="food flex gap-x-[20px] justify-between">
@@ -423,9 +429,9 @@
                                 </div>
                             </div>
                             <div class="flex gap-x-[20px] items-center">
-                                <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                                <button onclick="add_item('牛油方包', 25)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                                 <h4 class="count">0</h4>
-                                <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                                <button onclick="remove_item('牛油方包', 25)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                             </div>
                         </div>
                         <div class="food flex gap-x-[20px] justify-between">
@@ -437,9 +443,9 @@
                                 </div>
                             </div>
                             <div class="flex gap-x-[20px] items-center">
-                                <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                                <button onclick="add_item('瑞士雞翼', 20)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                                 <h4 class="count">0</h4>
-                                <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                                <button onclick="remove_item('瑞士雞翼', 20)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                             </div>
                         </div>
                         <div class="food flex gap-x-[20px] justify-between">
@@ -451,9 +457,9 @@
                                 </div>
                             </div>
                             <div class="flex gap-x-[20px] items-center">
-                                <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                                <button onclick="add_item('菠蘿油', 18)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                                 <h4 class="count">0</h4>
-                                <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                                <button onclick="remove_item('菠蘿油', 18)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                             </div>
                         </div>
                         <div class="food flex gap-x-[20px] justify-between">
@@ -465,9 +471,9 @@
                                 </div>
                             </div>
                             <div class="flex gap-x-[20px] items-center">
-                                <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                                <button onclick="add_item('西多士', 25)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                                 <h4 class="count">0</h4>
-                                <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                                <button onclick="remove_item('西多士', 25)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                             </div>
                         </div>
                         <div class="food flex gap-x-[20px] justify-between">
@@ -479,9 +485,9 @@
                                 </div>
                             </div>
                             <div class="flex gap-x-[20px] items-center">
-                                <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                                <button onclick="add_item('餐蛋治', 20)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                                 <h4 class="count">0</h4>
-                                <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                                <button onclick="remove_item('餐蛋治', 20)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                             </div>
                         </div>
                         <div class="food flex gap-x-[20px] justify-between">
@@ -493,22 +499,30 @@
                                 </div>
                             </div>
                             <div class="flex gap-x-[20px] items-center">
-                                <button class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
+                                <button onclick="add_item('鮮油多士', 20)" class="plus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/plus.png" alt="plus"></button>
                                 <h4 class="count">0</h4>
-                                <button class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
+                                <button onclick="remove_item('鮮油多士', 20)" class="minus w-[20px] h-[20px]"><img class="w-[16px] h-auto" src="images/minus.png" alt="minus"></button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="flex fixed bottom-2 linear2 pl-16 pr-4 py-1 left-4 right-4 text-white rounded-full lg:hidden h-[50px] justify-between items-center">
+                <div class="fixed order-list-mobile bottom-[35px] p-1 pb-[40px] linear3 backdrop-blur-lg left-2 right-2 lg:hidden rounded-lg text-white flex flex-col duration-500">
+                    <button onclick="order_list_switch()" class="w-full flex justify-center">
+                        <img class="w-[10px] h-[10px]" src="./images/130906.png" alt="extend-order-list">
+                    </button>
+                    <div class="order-list flex flex-col">
+
+                    </div>
+                </div>
+                <div class="flex fixed bottom-2 linear2 pl-16 pr-4 py-1 left-4 right-2 h-[50px] text-white rounded-full lg:hidden justify-between items-center">
                     <div class="flex gap-x-[10px] items-center">
-                        <h4 class="price">MOP$0</h4>
+                        <h4 class="price total-price">MOP$0</h4>
                         <h4 class="flex justify-center items-center bg-red-700 text-center text-white w-[20px] h-[20px] rounded-full">
-                            <span class="align-center">0</span>
+                            <span class="align-center total-count">0</span>
                         </h4>
                     </div>
                     <div class="items-center">
-                        <button class="px-8 py-1 align-center bg-white text-black rounded-full"><span class="linear1 text-transparent">落單</span></button>
+                        <button onclick="" class="px-8 py-1 align-center bg-white rounded-full"><span class="text-[#0ea5e9]">落單</span></button>
                     </div>
                 </div>
                 <div class="fixed bottom-2 left-4 conic2 p-3 rounded-full translate-x-[-9px] lg:hidden">
@@ -516,10 +530,107 @@
                 </div>
             </div>
             <div class="hidden lg:flex lg:flex-col lg:flex-1 px-4 py-2">
-                <div class="fixed">
-                    Hello
+                <div class="order-list flex flex-col fixed linear3 backdrop-blur-lg w-[48%] text-white rounded-lg">
+
+                </div>
+                <div class="flex fixed bottom-2 linear2 pr-16 pl-4 py-1 right-4 left-[50%] h-[50px] text-white rounded-full justify-between items-center">
+                    <div class="flex gap-x-[10px] items-center">
+                        <h4 class="price total-price">MOP$0</h4>
+                        <h4 class="flex justify-center items-center bg-red-700 text-center text-white w-[20px] h-[20px] rounded-full">
+                            <span class="align-center total-count">0</span>
+                        </h4>
+                    </div>
+                    <div class="items-center">
+                        <button onclick="document.querySelector('confirm-page')" class="px-8 py-1 mr-2 align-center bg-white rounded-full"><span class="text-[#0ea5e9]">落單</span></button>
+                    </div>
+                </div>
+                <div class="fixed bottom-2 right-1 conic2 p-3 rounded-full translate-x-[-9px]">
+                    <img class="w-[40px] h-auto" src="images/eco-food.png" alt="">
                 </div>
             </div>
         </div>
+        <div class="confirm-page w-screen h-screen bg-white hidden">
+            
+        </div>
+
+        <script>
+            let items = {};
+            let items_total_count = 0;
+            let items_total_price = 0;
+
+            const update_items = () => {
+                let foods = document.querySelectorAll('.food .name');
+                let food_name = null;
+                let food_count = null;
+                document.querySelectorAll('.order-list').forEach((val, key, parent) => {
+                    val.innerHTML = '';
+                })
+
+                foods.forEach((val, key, parent) => {
+                    food_name = val.innerText;
+                    if (items[food_name]) {
+                        food_count = items[food_name].count;
+                        document.querySelectorAll('.food .count')[key].innerText = food_count;
+                        document.querySelectorAll('.total-count').forEach((val, key, parent) => {
+                            val.innerText = `${items_total_count}`
+                        });
+                        document.querySelectorAll('.total-price').forEach((val, key, parent) => {
+                            val.innerText = `MOP$${items_total_price}`;
+                        });
+                        
+                        if (items[food_name].count) {
+                            let new_item = null;
+                            document.querySelectorAll('.order-list').forEach((val, key, parent) => {
+                                new_item = document.createElement('pre');
+                                new_item.className = 'order-item m-2';
+                                new_item.textContent = `${food_name}    MOP$${items[food_name].price}    x${items[food_name].count}`;
+                                val.appendChild(new_item);
+                            })
+                        }
+                    }
+                })
+            }
+
+            const add_item = (item, price) => {
+                if (items[item]) {
+                    items[item].count += 1;
+                } else {
+                    items[item] = {
+                        name: item,
+                        count: 1,
+                        price: price
+                    }
+                }
+                items_total_count += 1
+                items_total_price += price;
+                update_items();
+                console.log(items_total_count, items_total_price);
+            }
+
+            const remove_item = (item, price) => {
+                if (items[item]) {
+                    items[item].count -= 1;
+                    items_total_count -= 1
+                    items_total_price -= price;
+                    update_items();
+                    if (items[item].count <= 0) {
+                        delete items[item];
+                    }
+                }
+                console.log(items_total_count, items_total_price);
+            }
+
+            let order_list_status = false;
+            document.querySelector('.order-list-mobile').style.height = '30px';
+            const order_list_switch = () => {
+                if (order_list_status) {
+                    document.querySelector('.order-list-mobile').style.height = '30px';
+                    order_list_status = false;
+                } else {
+                    document.querySelector('.order-list-mobile').style.height = 'auto';
+                    order_list_status = true;
+                }
+            }
+        </script>
     </body>
 </html>
