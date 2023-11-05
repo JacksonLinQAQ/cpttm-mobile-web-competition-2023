@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Document</title>
+        <style>
+            .linear1 {
+                color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+                background-image: linear-gradient(to right, rgb(14 165 233), rgb(99 102 241));
+            }
+            .linear2 {
+                background-image: linear-gradient(to right, rgb(14 165 233), rgb(99 102 241));
+            }
+            .linear2-hover:hover {
+                background-image: linear-gradient(to right, rgb(14 165 233), rgb(99 102 241));
+            }
+            .food {
+                background-color: white;
+                padding: 10px;
+                border-radius: 20px;
+            }
+        </style>
+    </head>
+    <body class="bg-slate-100 font-['Helvetica'] m-0">
+        <nav class="bg-white p-2">
+            <ul class="flex gap-x-[20px] justify-between">
+                <li>
+                    <h1 class="font-bold linear1">開心茶餐廳</h1>
+                </li>
+                <div class="flex gap-x-[10px]">
+                    <li>
+                        <a class="p-2 hover:bg-slate-100 rounded-lg" href="./index.html">首頁</a>
+                    </li>
+                    <li>
+                        <a class="p-2 hover:bg-slate-100 rounded-lg" href="./order.html">點餐</a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+        <div class="flex flex-col lg:flex-row">
+            <div class="flex-row flex flex-col flex-1 m-4 mb-[60px]">
+                <div class="flex flex-col w-full gap-y-[20px]">
+                    <h2 class="w-full text-center sticky top-0 p-2 linear2 text-white rounded-lg font-bold">主食</h2>
+                    <div class="food flex gap-x-[20px] justify-between">
+                        <div class="flex gap-x-[20px]">
+                            <img class="image w-[80px] h-auto" src="images/主食-麻婆豆腐飯-mop38-removebg-preview.png" alt="麻婆豆腐飯">
+                            <div class="flex flex-col">
+                                <h3 class="name">麻婆豆腐飯</h3>
+                                <h3 class="price text-[12px]" price>MOP$38</h3>
+                            </div>
+                        </div>
+                        <div class="flex gap-x-[20px] items-center">
+                            <button class="plus w-[20px] h-[20px] p-2">+</button>
+                            <h4 class="count">0</h4>
+                            <button class="minus w-[20px] h-[20px] p-2">-</button>
+                        </div>
+                    </div>
+                    <div class="food flex gap-x-[20px] justify-between">
+                        <div class="flex gap-x-[20px]">
+                            <img class="image w-[80px] h-auto" src="images/主食-豬扒炒公仔麵-mop30-removebg-preview.png" alt="豬扒炒公仔麵">
+                            <div class="flex flex-col">
+                                <h3 class="name">豬扒炒公仔麵</h3>
+                                <h3 class="price text-[12px]">MOP$30</h3>
+                            </div>
+                        </div>
+                        <div class="flex gap-x-[20px] items-center">
+                            <button class="plus w-[20px] h-[20px] p-2">+</button>
+                            <h4 class="count">0</h4>
+                            <button class="minus w-[20px] h-[20px] p-2">-</button>
+                        </div>
+                    </div>
+                    <div class="food flex gap-x-[20px] justify-between">
+                        <div class="flex gap-x-[20px]">
+                            <img class="image w-[80px] h-auto" src="images/主食-滑蛋蝦仁飯-mop38-removebg-preview.png" alt="滑蛋蝦仁飯">
+                            <div class="flex flex-col">
+                                <h3 class="name">滑蛋蝦仁飯</h3>
+                                <h3 class="price text-[12px]">MOP$38</h3>
+                            </div>
+                        </div>
+                        <div class="flex gap-x-[20px] items-center">
+                            <button class="plus w-[20px] h-[20px] p-2">+</button>
+                            <h4 class="count">0</h4>
+                            <button class="minus w-[20px] h-[20px] p-2">-</button>
+                        </div>
+                    </div>
+                    <div class="food flex gap-x-[20px] justify-between">
+                        <div class="flex gap-x-[20px]">
+                            <img class="image w-[80px] h-auto" src="images/主食-楊州炒飯-mop38-removebg-preview.png" alt="楊州炒飯">
+                            <div class="flex flex-col">
+                                <h3 class="name">楊州炒飯</h3>
+                                <h3 class="price text-[12px]">MOP$38</h3>
+                            </div>
+                        </div>
+                        <div class="flex gap-x-[20px] items-center">
+                            <button class="plus w-[20px] h-[20px] p-2">+</button>
+                            <h4 class="count">0</h4>
+                            <button class="minus w-[20px] h-[20px] p-2">-</button>
+                        </div>
+                    </div>
+                    <div class="food flex gap-x-[20px] justify-between">
+                        <div class="flex gap-x-[20px]">
+                            <img class="image w-[80px] h-auto" src="images/主食-雪菜肉絲湯米-mop28-removebg-preview.png" alt="雪菜肉絲湯米">
+                            <div class="flex flex-col">
+                                <h3 class="name">雪菜肉絲湯米</h3>
+                                <h3 class="price text-[12px]">MOP$28</h3>
+                            </div>
+                        </div>
+                        <div class="flex gap-x-[20px] items-center">
+                            <button class="plus w-[20px] h-[20px] p-2">+</button>
+                            <h4 class="count">0</h4>
+                            <button class="minus w-[20px] h-[20px] p-2">-</button>
+                        </div>
+                    </div>
+                    <div class="food flex gap-x-[20px] justify-between">
+                        <div class="flex gap-x-[20px]">
+                            <img class="image w-[80px] h-auto" src="images/主食-豉椒鮮魷飯-mop38-removebg-preview.png" alt="豉椒鮮魷飯">
+                            <div class="flex flex-col">
+                                <h3 class="name">豉椒鮮魷飯</h3>
+                                <h3 class="price text-[12px]">MOP$38</h3>
+                            </div>
+                        </div>
+                        <div class="flex gap-x-[20px] items-center">
+                            <button class="plus w-[20px] h-[20px] p-2">+</button>
+                            <h4 class="count">0</h4>
+                            <button class="minus w-[20px] h-[20px] p-2">-</button>
+                        </div>
+                    </div>
+                    <div class="food flex gap-x-[20px] justify-between">
+                        <div class="flex gap-x-[20px]">
+                            <img class="image w-[80px] h-auto" src="images/主食-涼瓜排骨飯-mop45-removebg-preview.png" alt="涼瓜排骨飯">
+                            <div class="flex flex-col">
+                                <h3 class="name">涼瓜排骨飯</h3>
+                                <h3 class="price text-[12px]">MOP$45</h3>
+                            </div>
+                        </div>
+                        <div class="flex gap-x-[20px] items-center">
+                            <button class="plus w-[20px] h-[20px] p-2">+</button>
+                            <h4 class="count">0</h4>
+                            <button class="minus w-[20px] h-[20px] p-2">-</button>
+                        </div>
+                    </div>
+                    <div class="food flex gap-x-[20px] justify-between">
+                        <div class="flex gap-x-[20px]">
+                            <img class="image w-[80px] h-auto" src="images/主食-乾炒牛河-mop38-removebg-preview.png" alt="乾炒牛河">
+                            <div class="flex flex-col">
+                                <h3 class="name">乾炒牛河</h3>
+                                <h3 class="price text-[12px]">MOP$38</h3>
+                            </div>
+                        </div>
+                        <div class="flex gap-x-[20px] items-center">
+                            <button class="plus w-[20px] h-[20px] p-2">+</button>
+                            <h4 class="count">0</h4>
+                            <button class="minus w-[20px] h-[20px] p-2">-</button>
+                        </div>
+                    </div>
+                    <div class="food flex gap-x-[20px] justify-between">
+                        <div class="flex gap-x-[20px]">
+                            <img class="image w-[80px] h-auto" src="images/主食-時菜牛肉飯-mop38-removebg-preview.png" alt="時菜牛肉飯">
+                            <div class="flex flex-col">
+                                <h3 class="name">時菜牛肉飯</h3>
+                                <h3 class="price text-[12px]">MOP$38</h3>
+                            </div>
+                        </div>
+                        <div class="flex gap-x-[20px] items-center">
+                            <button class="plus w-[20px] h-[20px] p-2">+</button>
+                            <h4 class="count">0</h4>
+                            <button class="minus w-[20px] h-[20px] p-2">-</button>
+                        </div>
+                    </div>
+                    <div class="food flex gap-x-[20px] justify-between">
+                        <div class="flex gap-x-[20px]">
+                            <img class="image w-[80px] h-auto" src="images/主食-星州炒米-mop38-removebg-preview.png" alt="星州炒米">
+                            <div class="flex flex-col">
+                                <h3 class="name">星州炒米</h3>
+                                <h3 class="price text-[12px]">MOP$38</h3>
+                            </div>
+                        </div>
+                        <div class="flex gap-x-[20px] items-center">
+                            <button class="plus w-[20px] h-[20px] p-2">+</button>
+                            <h4 class="count">0</h4>
+                            <button class="minus w-[20px] h-[20px] p-2">-</button>
+                        </div>
+                    </div>
+                    <div class="food flex gap-x-[20px] justify-between">
+                        <div class="flex gap-x-[20px]">
+                            <img class="image w-[80px] h-auto" src="images/主食-咸魚雞粒炒飯-mop38-removebg-preview.png" alt="咸魚雞粒炒飯">
+                            <div class="flex flex-col">
+                                <h3 class="name">咸魚雞粒炒飯</h3>
+                                <h3 class="price text-[12px]">MOP$38</h3>
+                            </div>
+                        </div>
+                        <div class="flex gap-x-[20px] items-center">
+                            <button class="plus w-[20px] h-[20px] p-2">+</button>
+                            <h4 class="count">0</h4>
+                            <button class="minus w-[20px] h-[20px] p-2">-</button>
+                        </div>
+                    </div>
+                    <div class="food flex gap-x-[20px] justify-between">
+                        <div class="flex gap-x-[20px]">
+                            <img class="image w-[80px] h-auto" src="images/主食-咖哩牛腩飯-mop38-removebg-preview.png" alt="咖哩牛腩飯">
+                            <div class="flex flex-col">
+                                <h3 class="name">咖哩牛腩飯</h3>
+                                <h3 class="price text-[12px]">MOP$38</h3>
+                            </div>
+                        </div>
+                        <div class="flex gap-x-[20px] items-center">
+                            <button class="plus w-[20px] h-[20px] p-2">+</button>
+                            <h4 class="count">0</h4>
+                            <button class="minus w-[20px] h-[20px] p-2">-</button>
+                        </div>
+                    </div>
+                    <div class="food flex gap-x-[20px] justify-between">
+                        <div class="flex gap-x-[20px]">
+                            <img class="image w-[80px] h-auto" src="images/主食-豆腐火腩飯-mop38-removebg-preview.png" alt="豆腐火腩飯">
+                            <div class="flex flex-col">
+                                <h3 class="name">豆腐火腩飯</h3>
+                                <h3 class="price text-[12px]">MOP$38</h3>
+                            </div>
+                        </div>
+                        <div class="flex gap-x-[20px] items-center">
+                            <button class="plus w-[20px] h-[20px] p-2">+</button>
+                            <h4 class="count">0</h4>
+                            <button class="minus w-[20px] h-[20px] p-2">-</button>
+                        </div>
+                    </div>
+                    <div class="food flex gap-x-[20px] justify-between">
+                        <div class="flex gap-x-[20px]">
+                            <img class="image w-[80px] h-auto" src="images/主食-沙爹牛肉通粉-mop28-removebg-preview.png" alt="沙爹牛肉通粉">
+                            <div class="flex flex-col">
+                                <h3 class="name">沙爹牛肉通粉</h3>
+                                <h3 class="price text-[12px]">MOP$28</h3>
+                            </div>
+                        </div>
+                        <div class="flex gap-x-[20px] items-center">
+                            <button class="plus w-[20px] h-[20px] p-2">+</button>
+                            <h4 class="count">0</h4>
+                            <button class="minus w-[20px] h-[20px] p-2">-</button>
+                        </div>
+                    </div>
+                    <div class="food flex gap-x-[20px] justify-between">
+                        <div class="flex gap-x-[20px]">
+                            <img class="image w-[80px] h-auto" src="images/主食-肉絲炒麵-mop36-removebg-preview.png" alt="肉絲炒麵">
+                            <div class="flex flex-col">
+                                <h3 class="name">肉絲炒麵</h3>
+                                <h3 class="price text-[12px]">MOP$36</h3>
+                            </div>
+                        </div>
+                        <div class="flex gap-x-[20px] items-center">
+                            <button class="plus w-[20px] h-[20px] p-2">+</button>
+                            <h4 class="count">0</h4>
+                            <button class="minus w-[20px] h-[20px] p-2">-</button>
+                        </div>
+                    </div>
+                    <div class="food flex gap-x-[20px] justify-between">
+                        <div class="flex gap-x-[20px]">
+                            <img class="image w-[80px] h-auto" src="images/主食-干炒叉燒意-mop42-removebg-preview.png" alt="干炒叉燒意">
+                            <div class="flex flex-col">
+                                <h3 class="name">干炒叉燒意</h3>
+                                <h3 class="price text-[12px]">MOP$42</h3>
+                            </div>
+                        </div>
+                        <div class="flex gap-x-[20px] items-center">
+                            <button class="plus w-[20px] h-[20px] p-2">+</button>
+                            <h4 class="count">0</h4>
+                            <button class="minus w-[20px] h-[20px] p-2">-</button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-full gap-y-[20px]">
+                        <h2 class="w-full text-center sticky top-0 p-2 linear2 text-white rounded-lg font-bold">輕食</h2>
+                        <div class="food flex gap-x-[20px] justify-between">
+                            <div class="flex gap-x-[20px]">
+                                <img class="image w-[80px] h-auto" src="images/輕食-五香肉丁公仔麵-mop25-removebg-preview.png" alt="五香肉丁公仔麵">
+                                <div class="flex flex-col">
+                                    <h3 class="name">五香肉丁公仔麵</h3>
+                                    <h3 class="price text-[12px]" price>MOP$25</h3>
+                                </div>
+                            </div>
+                            <div class="flex gap-x-[20px] items-center">
+                                <button class="plus w-[20px] h-[20px] p-2">+</button>
+                                <h4 class="count">0</h4>
+                                <button class="minus w-[20px] h-[20px] p-2">-</button>
+                            </div>
+                        </div>
+                        <div class="food flex gap-x-[20px] justify-between">
+                            <div class="flex gap-x-[20px]">
+                                <img class="image w-[80px] h-auto" src="images/輕食-公司三文治-mop24-removebg-preview.png" alt="公司三文治">
+                                <div class="flex flex-col">
+                                    <h3 class="name">公司三文治</h3>
+                                    <h3 class="price text-[12px]" price>MOP$24</h3>
+                                </div>
+                            </div>
+                            <div class="flex gap-x-[20px] items-center">
+                                <button class="plus w-[20px] h-[20px] p-2">+</button>
+                                <h4 class="count">0</h4>
+                                <button class="minus w-[20px] h-[20px] p-2">-</button>
+                            </div>
+                        </div>
+                        <div class="food flex gap-x-[20px] justify-between">
+                            <div class="flex gap-x-[20px]">
+                                <img class="image w-[80px] h-auto" src="images/輕食-占醬多士-mop20-removebg-preview.png" alt="占醬多士">
+                                <div class="flex flex-col">
+                                    <h3 class="name">占醬多士</h3>
+                                    <h3 class="price text-[12px]" price>MOP$20</h3>
+                                </div>
+                            </div>
+                            <div class="flex gap-x-[20px] items-center">
+                                <button class="plus w-[20px] h-[20px] p-2">+</button>
+                                <h4 class="count">0</h4>
+                                <button class="minus w-[20px] h-[20px] p-2">-</button>
+                            </div>
+                        </div>
+                        <div class="food flex gap-x-[20px] justify-between">
+                            <div class="flex gap-x-[20px]">
+                                <img class="image w-[80px] h-auto" src="images/輕食-吉列班塊-mop20-removebg-preview.png" alt="吉列班塊">
+                                <div class="flex flex-col">
+                                    <h3 class="name">吉列班塊</h3>
+                                    <h3 class="price text-[12px]" price>MOP$20</h3>
+                                </div>
+                            </div>
+                            <div class="flex gap-x-[20px] items-center">
+                                <button class="plus w-[20px] h-[20px] p-2">+</button>
+                                <h4 class="count">0</h4>
+                                <button class="minus w-[20px] h-[20px] p-2">-</button>
+                            </div>
+                        </div>
+                        <div class="food flex gap-x-[20px] justify-between">
+                            <div class="flex gap-x-[20px]">
+                                <img class="image w-[80px] h-auto" src="images/輕食-吉列豬扒-mop20-removebg-preview.png" alt="吉列豬扒">
+                                <div class="flex flex-col">
+                                    <h3 class="name">吉列豬扒</h3>
+                                    <h3 class="price text-[12px]" price>MOP$20</h3>
+                                </div>
+                            </div>
+                            <div class="flex gap-x-[20px] items-center">
+                                <button class="plus w-[20px] h-[20px] p-2">+</button>
+                                <h4 class="count">0</h4>
+                                <button class="minus w-[20px] h-[20px] p-2">-</button>
+                            </div>
+                        </div>
+                        <div class="food flex gap-x-[20px] justify-between">
+                            <div class="flex gap-x-[20px]">
+                                <img class="image w-[80px] h-auto" src="images/輕食-咸牛肉三文治-mop24-removebg-preview.png" alt="咸牛肉三文治">
+                                <div class="flex flex-col">
+                                    <h3 class="name">咸牛肉三文治</h3>
+                                    <h3 class="price text-[12px]" price>MOP$24</h3>
+                                </div>
+                            </div>
+                            <div class="flex gap-x-[20px] items-center">
+                                <button class="plus w-[20px] h-[20px] p-2">+</button>
+                                <h4 class="count">0</h4>
+                                <button class="minus w-[20px] h-[20px] p-2">-</button>
+                            </div>
+                        </div>
+                        <div class="food flex gap-x-[20px] justify-between">
+                            <div class="flex gap-x-[20px]">
+                                <img class="image w-[80px] h-auto" src="images/輕食-奶油多士-mop20-removebg-preview.png" alt="奶油多士">
+                                <div class="flex flex-col">
+                                    <h3 class="name">奶油多士</h3>
+                                    <h3 class="price text-[12px]" price>MOP$20</h3>
+                                </div>
+                            </div>
+                            <div class="flex gap-x-[20px] items-center">
+                                <button class="plus w-[20px] h-[20px] p-2">+</button>
+                                <h4 class="count">0</h4>
+                                <button class="minus w-[20px] h-[20px] p-2">-</button>
+                            </div>
+                        </div>
+                        <div class="food flex gap-x-[20px] justify-between">
+                            <div class="flex gap-x-[20px]">
+                                <img class="image w-[80px] h-auto" src="images/輕食-火腿奄列-mop25-removebg-preview.png" alt="火腿奄列">
+                                <div class="flex flex-col">
+                                    <h3 class="name">火腿奄列</h3>
+                                    <h3 class="price text-[12px]" price>MOP$25</h3>
+                                </div>
+                            </div>
+                            <div class="flex gap-x-[20px] items-center">
+                                <button class="plus w-[20px] h-[20px] p-2">+</button>
+                                <h4 class="count">0</h4>
+                                <button class="minus w-[20px] h-[20px] p-2">-</button>
+                            </div>
+                        </div>
+                        <div class="food flex gap-x-[20px] justify-between">
+                            <div class="flex gap-x-[20px]">
+                                <img class="image w-[80px] h-auto" src="images/輕食-火腿湯通粉-mop25-removebg-preview.png" alt="火腿湯通粉">
+                                <div class="flex flex-col">
+                                    <h3 class="name">火腿湯通粉</h3>
+                                    <h3 class="price text-[12px]" price>MOP$25</h3>
+                                </div>
+                            </div>
+                            <div class="flex gap-x-[20px] items-center">
+                                <button class="plus w-[20px] h-[20px] p-2">+</button>
+                                <h4 class="count">0</h4>
+                                <button class="minus w-[20px] h-[20px] p-2">-</button>
+                            </div>
+                        </div>
+                        <div class="food flex gap-x-[20px] justify-between">
+                            <div class="flex gap-x-[20px]">
+                                <img class="image w-[80px] h-auto" src="images/輕食-炸薯條-mop20-removebg-preview.png" alt="炸薯條">
+                                <div class="flex flex-col">
+                                    <h3 class="name">炸薯條</h3>
+                                    <h3 class="price text-[12px]" price>MOP$20</h3>
+                                </div>
+                            </div>
+                            <div class="flex gap-x-[20px] items-center">
+                                <button class="plus w-[20px] h-[20px] p-2">+</button>
+                                <h4 class="count">0</h4>
+                                <button class="minus w-[20px] h-[20px] p-2">-</button>
+                            </div>
+                        </div>
+                        <div class="food flex gap-x-[20px] justify-between">
+                            <div class="flex gap-x-[20px]">
+                                <img class="image w-[80px] h-auto" src="images/輕食-牛油方包-mop25-removebg-preview.png" alt="牛油方包">
+                                <div class="flex flex-col">
+                                    <h3 class="name">牛油方包</h3>
+                                    <h3 class="price text-[12px]" price>MOP$25</h3>
+                                </div>
+                            </div>
+                            <div class="flex gap-x-[20px] items-center">
+                                <button class="plus w-[20px] h-[20px] p-2">+</button>
+                                <h4 class="count">0</h4>
+                                <button class="minus w-[20px] h-[20px] p-2">-</button>
+                            </div>
+                        </div>
+                        <div class="food flex gap-x-[20px] justify-between">
+                            <div class="flex gap-x-[20px]">
+                                <img class="image w-[80px] h-auto" src="images/輕食-瑞士雞翼-mop20-removebg-preview.png" alt="瑞士雞翼">
+                                <div class="flex flex-col">
+                                    <h3 class="name">瑞士雞翼</h3>
+                                    <h3 class="price text-[12px]" price>MOP$20</h3>
+                                </div>
+                            </div>
+                            <div class="flex gap-x-[20px] items-center">
+                                <button class="plus w-[20px] h-[20px] p-2">+</button>
+                                <h4 class="count">0</h4>
+                                <button class="minus w-[20px] h-[20px] p-2">-</button>
+                            </div>
+                        </div>
+                        <div class="food flex gap-x-[20px] justify-between">
+                            <div class="flex gap-x-[20px]">
+                                <img class="image w-[80px] h-auto" src="images/輕食-菠蘿油-mop18-removebg-preview.png" alt="菠蘿油">
+                                <div class="flex flex-col">
+                                    <h3 class="name">菠蘿油</h3>
+                                    <h3 class="price text-[12px]" price>MOP$18</h3>
+                                </div>
+                            </div>
+                            <div class="flex gap-x-[20px] items-center">
+                                <button class="plus w-[20px] h-[20px] p-2">+</button>
+                                <h4 class="count">0</h4>
+                                <button class="minus w-[20px] h-[20px] p-2">-</button>
+                            </div>
+                        </div>
+                        <div class="food flex gap-x-[20px] justify-between">
+                            <div class="flex gap-x-[20px]">
+                                <img class="image w-[80px] h-auto" src="images/輕食-西多士-mop25-removebg-preview.png" alt="西多士">
+                                <div class="flex flex-col">
+                                    <h3 class="name">西多士</h3>
+                                    <h3 class="price text-[12px]" price>MOP$25</h3>
+                                </div>
+                            </div>
+                            <div class="flex gap-x-[20px] items-center">
+                                <button class="plus w-[20px] h-[20px] p-2">+</button>
+                                <h4 class="count">0</h4>
+                                <button class="minus w-[20px] h-[20px] p-2">-</button>
+                            </div>
+                        </div>
+                        <div class="food flex gap-x-[20px] justify-between">
+                            <div class="flex gap-x-[20px]">
+                                <img class="image w-[80px] h-auto" src="images/輕食-餐蛋治-mop20-removebg-preview.png" alt="餐蛋治">
+                                <div class="flex flex-col">
+                                    <h3 class="name">餐蛋治</h3>
+                                    <h3 class="price text-[12px]" price>MOP$20</h3>
+                                </div>
+                            </div>
+                            <div class="flex gap-x-[20px] items-center">
+                                <button class="plus w-[20px] h-[20px] p-2">+</button>
+                                <h4 class="count">0</h4>
+                                <button class="minus w-[20px] h-[20px] p-2">-</button>
+                            </div>
+                        </div>
+                        <div class="food flex gap-x-[20px] justify-between">
+                            <div class="flex gap-x-[20px]">
+                                <img class="image w-[80px] h-auto" src="images/輕食-鮮油多士-mop20-removebg-preview.png" alt="鮮油多士">
+                                <div class="flex flex-col">
+                                    <h3 class="name">鮮油多士</h3>
+                                    <h3 class="price text-[12px]" price>MOP$20</h3>
+                                </div>
+                            </div>
+                            <div class="flex gap-x-[20px] items-center">
+                                <button class="plus w-[20px] h-[20px] p-2">+</button>
+                                <h4 class="count">0</h4>
+                                <button class="minus w-[20px] h-[20px] p-2">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fixed bottom-0 lg:static lg:flex lg:flex-row lg:flex-1 p-4">
+                Hello
+            </div>
+        </div>
+    </body>
+</html>

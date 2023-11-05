@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Document</title>
+        <style>
+            .linear1 {
+                color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+                background-image: linear-gradient(to right, rgb(14 165 233), rgb(99 102 241));
+            }
+            .linear2 {
+                background-image: linear-gradient(to right, rgb(14 165 233), rgb(99 102 241));
+            }
+            .linear2-hover:hover {
+                background-image: linear-gradient(to right, rgb(14 165 233), rgb(99 102 241));
+            }
+        </style>
+    </head>
+    <body class="bg-slate-100 font-['Helvetica'] m-0">
+        <nav class="bg-white p-2">
+            <ul class="flex gap-x-[20px] justify-between">
+                <li>
+                    <h1 class="font-bold linear1">開心茶餐廳</h1>
+                </li>
+                <div class="flex gap-x-[10px]">
+                    <li>
+                        <a class="p-2 hover:bg-slate-100 rounded-lg" href="./index.html">首頁</a>
+                    </li>
+                    <li>
+                        <a class="p-2 hover:bg-slate-100 rounded-lg" href="./order.html">點餐</a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+        <h1 class="absolute text-center font-bold text-[40px] lg:text-[72px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-screen">開心茶餐廳<span class="block translate-x-[11px] text-[48px] lg:text-[100px] linear1">歡迎光臨！</span></h1>
+        <a href="./order.html" class="absolute text-center bg-white bottom-[10%] left-[50%] translate-x-[-50%] translate-y-[-50%] p-2 rounded-full hover:text-white linear2-hover w-[120px] duration-300">點餐</a>
+    </body>
+</html>
