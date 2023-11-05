@@ -522,7 +522,7 @@
                         </h4>
                     </div>
                     <div class="items-center">
-                        <button onclick="" class="px-8 py-1 align-center bg-white rounded-full"><span class="text-[#0ea5e9]">落單</span></button>
+                        <button onclick="open_confirm_page()" class="px-8 py-1 align-center bg-white rounded-full"><span class="text-[#0ea5e9]">落單</span></button>
                     </div>
                 </div>
                 <div class="fixed bottom-2 left-4 conic2 p-3 rounded-full translate-x-[-9px] lg:hidden">
@@ -541,7 +541,7 @@
                         </h4>
                     </div>
                     <div class="items-center">
-                        <button onclick="document.querySelector('confirm-page')" class="px-8 py-1 mr-2 align-center bg-white rounded-full"><span class="text-[#0ea5e9]">落單</span></button>
+                        <button onclick="open_confirm_page()" class="px-8 py-1 mr-2 align-center bg-white rounded-full"><span class="text-[#0ea5e9]">落單</span></button>
                     </div>
                 </div>
                 <div class="fixed bottom-2 right-1 conic2 p-3 rounded-full translate-x-[-9px]">
@@ -549,11 +549,25 @@
                 </div>
             </div>
         </div>
-        <div class="confirm-page w-screen h-screen bg-white hidden">
-            
+        <div class="absolute top-0 left-0 confirm-page w-screen h-screen hidden bg-white flex gap-y-[20px] flex-col justify-center align-center">
+            <h3 class="text-center">確定要提交訂單嗎？</h3>
+            <div class="order-list flex flex-col fixed linear3 backdrop-blur-lg w-[48%] text-white rounded-lg">
+
+            </div>
+            <div class="flex gap-x-[10px] justify-center items-center">
+                <a class="text-center" href="./sent.html">確定</a>
+                <button onclick="close_confirm_page()">取消</button>
+            </div>
         </div>
 
         <script>
+            const open_confirm_page = () => {
+                document.querySelector('.confirm-page').style.display = 'block';
+            }
+            const close_confirm_page = () => {
+                document.querySelector('.confirm-page').style.display = 'none';
+            }
+
             let items = {};
             let items_total_count = 0;
             let items_total_price = 0;
